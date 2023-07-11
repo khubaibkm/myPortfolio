@@ -1,0 +1,802 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+    color: white;
+}
+
+*::selection{
+    color: #addc2f;
+    background-color: white;
+}
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 8px;
+    background-color: #addc2f;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 30px;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+/* cusor */
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #addc2f;
+    border-radius: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+#cursor-blur{
+    height: 400px;
+    width: 400px;
+    background-color:#aedc2f3e;
+    border-radius: 100%;
+    position: fixed;
+    filter: blur(60px);
+    z-index: 9;
+}
+
+
+#nav{
+    height: 120px;
+    width: 100%;
+    padding: 0 120px;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    position: fixed;
+    gap: 50px;
+    z-index: 99;
+}
+
+#nav img{
+    height: 200px;
+}
+
+
+#nav a{
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all ease-out 0.3s;
+
+}
+
+#nav a:hover{
+    color: #addc2f;
+    scale: 1.2;
+    transition: all ease-out 0.3s;
+}
+
+
+
+/* main div */
+#main{
+    position: relative;
+    /* background-color: rgba(0, 0, 0, 0.37); */
+}
+
+
+/* page 1 div */
+#page1{
+    height: 100vh;
+    width: 100%;
+    background: rgb(218,217,226);
+background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    z-index: 10;
+}
+
+#page1 h1{
+    font-size: 100px;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 50%;
+    position: relative;
+    /* -webkit-text-stroke: 1px black; */
+    z-index: 1;
+    margin-top: 122px;
+    margin-left: 155px;
+}
+
+#page1 h1::before{
+    content:"Hey, I am khubaib Ahmad.";
+    text-transform: uppercase;
+    position: absolute;
+    color: black;
+    top:-4px;
+    left: -4px;
+    -webkit-text-stroke: 2px #addc2f;
+    z-index: -1;
+
+}
+
+#page1 h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 10px 0 20px 0;
+    margin-left: 155px;
+}
+#page1 p{
+    font-size: 20px;
+    font-weight: 300;
+    width: 40%;
+    margin-left: 155px;
+}
+
+#page1 #arrow{
+    height: 180px;
+    width: 180px;
+    border: 2px solid #addc2f;
+    position: absolute;
+    display: flex;
+    left: -3%;
+    bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+
+#page1 #arrow:hover{
+    scale: 0.8;
+    background-color: #addc2f;
+    cursor: pointer;
+}
+
+#page1 #arrow i{
+    font-size: 50px;
+    
+}
+
+#mypic{
+    position: absolute;
+    left: 62rem;
+    top: 11rem;
+}
+
+
+
+/* page 2 div */
+#page2{
+    height: 300vh;
+    width: 100%;
+    z-index: 10;
+}
+
+#scroller{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+    top: 3rem;
+}
+
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+
+#scroller1{
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll;
+    animation-duration: 35s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroller h4{
+    display: inline-block;
+    font-size: 140px;
+    font-weight: 900;
+    margin-right: 10px;
+    color: transparent;
+    transition: all linear 0.4s;
+    color: black;
+    -webkit-text-stroke: 2px white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#scroller1 h4:hover{
+    color: #addc2f;
+    -webkit-text-stroke: 2px #addc2f;
+}
+
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+/* about me */
+#about-me{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+    padding-top: 5rem;
+}
+
+#aboutin{
+    width: 50%;
+    text-align: center;
+}
+
+#aboutin h3{
+    font-size: 55px;
+    font-weight: 800;
+    margin: 200px 0 40px 0;
+}
+
+#aboutin p{
+    font-size: 22px;
+    line-height: 35px;
+}
+
+
+.skills {
+    margin: 0;
+    padding: 0 200px;
+    border: none;
+    position: relative;
+    top: 3rem;
+    
+  }
+
+.skills h2{
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 200px;
+}
+  
+  .skill {
+    margin-bottom: 10px;
+  }
+  
+  .skill-name {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  
+  .skill-bar {
+    height: 30px;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    width: 0;
+    transition: width 5s ease;
+  }
+  
+  .skill-level {
+    height: 100%;
+    background: black;
+    background: linear-gradient(90deg, #addc2f 0%, #5eae22 120%);
+    border-radius: 50px;
+  }
+  
+
+/* education */
+#education{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0 50px;
+    padding-bottom: 5rem;
+}
+
+#education h2{
+    font-size: 55px;
+    font-weight: 800;
+    margin: 600px 0 100px 0;
+}
+
+#college{
+    width: 50%;
+    text-align: center;
+}
+
+#college h3{
+    font-size: 35px;
+    font-weight: 800;
+    margin: 0px 0 40px 0;
+    text-align: left;
+}
+
+#college p{
+    font-size: 22px;
+    line-height: 35px;
+    text-align: left;
+}
+
+#school{
+    width: 50%;
+    text-align: center;
+}
+
+#school h3{
+    font-size: 35px;
+    font-weight: 800;
+    margin: 50px 0 40px 0;
+    text-align: left;
+}
+
+#school p{
+    font-size: 22px;
+    line-height: 35px;
+    text-align: left;
+}
+
+/* page 3 div */
+#page3{
+    height: 280vh;
+    width: 100%;
+    z-index: 10;
+    background-color: black;
+}
+
+#page3 h2{
+    font-size: 55px;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    top: 8rem;
+}
+
+#cards-container{
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+
+.card{
+    height: 80%;
+    width: 26%;
+    margin-top: 60px;
+    border-radius: 20px;
+    background-color: #addc2f;
+    overflow: hidden;
+    transition: all ease 0.6s;
+}
+
+#card1{
+    background-image: url(images/img1.jfif);
+    background-position: center;
+    background-size: cover;
+}
+
+#card2{
+    background-image: url(images/img3.jfif);
+    background-position: center;
+    background-size: cover;
+}
+
+#card3{
+    background-image: url(images/img2.jfif);
+    background-position:left;
+    background-size: cover;
+}
+
+  
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #addc2f;
+    padding: 30px;
+    padding-top: 80px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all ease 0.6s;
+}
+
+.overlay h4{
+    color: black;
+    font-size: 40px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.overlay p{
+    color: black;
+    font-size: 18px;
+
+}
+
+.card:hover .overlay{
+   opacity: 1;
+   
+}
+
+.card:hover{
+    transform: rotate3d(-1,1,0,20deg) !important;
+    cursor: pointer;
+}
+
+#green-div{
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right top, #c6ff2a, #30ab15 );
+    justify-content: space-between;
+    margin-top: 1050px;
+}
+
+#green-div h4{
+    width: 45%;
+    color: black;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#green-div img{
+    height: 100%;
+    object-fit: cover;
+    width: 11%;
+}
+
+
+/* page 4 div */
+#page4{
+    height: 115vh;
+    width: 100%;
+    z-index: 10;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#page4 h4{
+    text-transform: uppercase;
+    font-size: 55px;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    top: -8rem;
+}
+
+#page4>p{
+    font-size: 35px;
+    font-weight: 800;
+    width: 60%;
+    text-align: center;}
+
+
+#page4 img{
+    position: absolute;
+    height: 60px;
+}
+
+#page4 #colon1{
+    left: 12%;
+    bottom: 14%;
+}
+
+#page4 #colon2{
+    bottom: 8%;
+    right: 14%;
+}
+
+#footer{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to right top, #c6ff2a, #30ab15 );
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 150px;
+    padding: 0 100px;
+}
+
+#footer>img{
+    position: absolute;
+    left: 0;
+    height: 90%;
+}
+
+#f1 h3{
+    height: 200px;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+#f1,#f2,#f3,#f4{
+    width: fit-content;
+    position: relative;
+    z-index: 100;
+}
+
+#footer i{
+    color: black;
+    font-weight: 500;
+}
+
+
+#f2 h3{
+    font-size: 30px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+#f3 h3{
+    font-size: 30px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+#f2 a,#f3 a{
+    text-decoration: none;
+    color: black;
+}
+
+#f4 h4{
+    font-size: 18px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 8px;
+}
+
+#f4 a{
+    text-decoration: none;
+    font-weight: 800;
+    color: #d2ff56;
+    font-size: 22px;
+}
+
+#f4 a:hover{
+    color: white;
+    cursor: pointer;
+    transition: all ease-out .3s;}
+
+#f2 a:hover,#f3 a:hover{
+    cursor: pointer;
+    color: white;
+transition: all ease-out .3s;}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+/* MEDIA QUERIES */
+
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    
+    #nav {
+      padding: 0 20px;
+    }
+    
+    #page1 h1 {
+      font-size: 60px;
+    }
+    
+    #page1 h2 {
+      font-size: 24px;
+    }
+    
+    #page1 p {
+      width: 80%;
+    }
+    
+    #mypic {
+      display: none;
+    }
+    
+    .skills {
+      padding: 0 50px;
+    }
+    
+    #education {
+      padding: 0 50px;
+    }
+    
+    #college h3,
+    #school h3 {
+      font-size: 28px;
+    }
+    
+    #college p,
+    #school p {
+      font-size: 18px;
+    }
+    
+    #page3 h2 {
+      font-size: 40px;
+    }
+    
+    .card {
+      height: 60%;
+      width: 45%;
+    }
+    
+    #green-div h4 {
+      font-size: 24px;
+      line-height: 40px;
+    }
+    
+    #green-div img {
+      width: 15%;
+    }
+    
+    #page4 h4 {
+      font-size: 40px;
+    }
+    
+    #page4 p {
+      font-size: 24px;
+      width: 80%;
+    }
+    
+    #footer {
+      padding: 0 50px;
+      gap: 100px;
+    }
+    
+    #f1 h3 {
+      font-size: 40px;
+    }
+    
+    #f2 h3,
+    #f3 h3 {
+      font-size: 24px;
+    }
+    
+    #f4 h4 {
+      font-size: 16px;
+    }
+    
+    #f4 a {
+      font-size: 18px;
+    }
+  }
+  
+  /* Media queries for smallest screens */
+  @media only screen and (max-width: 480px) {
+    #page1 h1 {
+      font-size: 40px;
+    }
+    
+    #page1 h2 {
+      font-size: 20px;
+    }
+    
+    #page1 p {
+      width: 90%;
+    }
+    
+    .skills {
+      padding: 0 20px;
+    }
+    
+    #education {
+      padding: 0 20px;
+    }
+    
+    #college h3,
+    #school h3 {
+      font-size: 24px;
+    }
+    
+    #college p,
+    #school p {
+      font-size: 16px;
+    }
+    
+    #page3 h2 {
+      font-size: 32px;
+    }
+    
+    .card {
+      height: 50%;
+      width: 90%;
+    }
+    
+    #green-div h4 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    
+    #green-div img {
+      width: 20%;
+    }
+    
+    #page4 h4 {
+      font-size: 32px;
+    }
+    
+    #page4 p {
+      font-size: 20px;
+      width: 90%;
+    }
+    
+    #footer {
+      padding: 0 20px;
+      gap: 80px;
+    }
+    
+    #f1 h3 {
+      font-size: 32px;
+    }
+    
+    #f2 h3,
+    #f3 h3 {
+      font-size: 20px;
+    }
+    
+    #f4 h4 {
+      font-size: 14px;
+    }
+    
+    #f4 a {
+      font-size: 16px;
+    }
+  }
+
+
+  /* Media queries for large screens */
+  @media only screen and (min-width: 1950px){
+    #mypic{
+        left: 80rem;
+    }
+  }
+  
+
+  
