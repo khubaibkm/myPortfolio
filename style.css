@@ -710,18 +710,50 @@ transition: all ease-out .3s;}
   
   /* Media queries for smallest screens */
   @media only screen and (max-width: 480px) {
+
+ 
+    #page1{
+        align-items: center;
+    }
+
+    #page1 h1::before{
+        top:-2.5px;
+        left: -2.5px;
+    }
+    
     #page1 h1 {
-      font-size: 40px;
+      font-size: 50px;
+      margin-bottom: 220px;
+      margin-left: -60px;
     }
     
     #page1 h2 {
       font-size: 20px;
+      position: relative;
+      right: 5.5rem;
+      bottom: 13rem;
+      
     }
     
     #page1 p {
-      width: 90%;
+      width: 70%;
+      position: relative;
+      right: 4.5rem;
+      bottom: 13rem;
     }
-    
+
+
+    #scroller h4{
+        font-size: 80px;
+        font-weight: 900;
+        margin-right: 10px;
+        -webkit-text-stroke: 1px white;
+        margin-bottom: 550px;
+        position: relative;
+        bottom: -2rem;
+    }
+
+
     .skills {
       padding: 0 20px;
     }
@@ -787,6 +819,31 @@ transition: all ease-out .3s;}
     
     #f4 a {
       font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 370px){
+    
+    #page1 h1 {
+      font-size: 40px;
+      margin-bottom: 200px;
+      margin-left: -60px;
+    }
+    
+    #page1 h2 {
+      font-size: 18px;
+      position: relative;
+      right: 6rem;
+      bottom: 12rem;
+      
+    }
+    
+    #page1 p {
+      width: 70%;
+      font-size: 18px;
+      position: relative;
+      right: 4.5rem;
+      bottom: 12rem;
     }
   }
 
