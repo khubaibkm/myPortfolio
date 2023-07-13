@@ -619,6 +619,53 @@ transition: all ease-out .3s;}
 /* MEDIA QUERIES */
 
 
+@media only screen and (max-width: 1500px){
+
+
+    #footer {
+        /* height: 60vh; */
+        padding: 10px;
+        gap: 85px;
+        padding:20px 0 0 50px;
+        /* flex-direction: column;
+        align-items: start; */
+      }
+
+    
+      #footer > img {
+        height: 50%;
+      }
+    
+      #f1 h3 {
+        font-size: 52px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+    
+      #f2 h3,
+      #f3 h3 {
+        font-size: 25px;
+        margin-bottom: 15px;
+      }
+    
+      #f4 h4 {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    
+      #f4 a {
+        font-size: 22px;
+      }
+}
+@media only screen and (max-width: 1050px){
+    #footer {
+        gap: 15px;
+      }
+}
+
+
+
+
 /* Media queries for smaller screens */
 @media only screen and (max-width: 768px) {
     body {
@@ -694,26 +741,40 @@ transition: all ease-out .3s;}
     }
     
     #footer {
-      padding: 0 50px;
-      gap: 100px;
-    }
+        height: 60vh;
+        padding: 10px;
+        gap: 15px;
+        padding:20px 0 0 50px;
+        flex-direction: column;
+        align-items: start;
+      }
+
     
-    #f1 h3 {
-      font-size: 40px;
-    }
+      #footer > img {
+        height: 50%;
+      }
     
-    #f2 h3,
-    #f3 h3 {
-      font-size: 24px;
-    }
+      #f1 h3 {
+        font-size: 52px;
+        height: auto;
+        margin-bottom: 20px;
+      }
     
-    #f4 h4 {
-      font-size: 16px;
-    }
+      #f2 h3,
+      #f3 h3 {
+        font-size: 25px;
+        margin-bottom: 15px;
+      }
     
-    #f4 a {
-      font-size: 18px;
-    }
+      #f4 h4 {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    
+      #f4 a {
+        font-size: 22px;
+        color:#30ab15
+      }
   }
   
   /* Media queries for smallest screens */
@@ -818,7 +879,7 @@ transition: all ease-out .3s;}
         height: 70vh;
         padding: 10px;
         gap: 15px;
-        padding:10px 0 0 30px;
+        padding:20px 0 0 50px;
         flex-direction: column;
         align-items: start;
       }
@@ -909,6 +970,8 @@ transition: all ease-out .3s;}
         color:#30ab15
       }
   }
+
+
 
 
   /* Media queries for large screens */
