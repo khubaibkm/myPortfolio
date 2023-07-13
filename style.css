@@ -67,6 +67,11 @@ html{
     z-index: 99;
 }
 
+#navlinks{
+    display: flex;
+    gap:50px
+}
+
 #nav img{
     height: 200px;
 }
@@ -86,6 +91,10 @@ html{
     transition: all ease-out 0.3s;
 }
 
+.resume{
+    color: #c6ff2a;
+    font-weight: 800 !important;
+}
 
 
 /* main div */
@@ -657,10 +666,15 @@ transition: all ease-out .3s;}
         font-size: 22px;
       }
 }
+
 @media only screen and (max-width: 1050px){
     #footer {
         gap: 15px;
       }
+    
+    #mypic{
+        display: none;
+    }
 }
 
 
@@ -677,8 +691,21 @@ transition: all ease-out .3s;}
     }
     
     #nav img{
-        height: 100px;
+        height: 120px;
     }
+
+    .resume{
+        display: none;
+    }
+
+    .contact{
+        display: none;
+    }
+
+    .achievements{
+        display: none;
+    }
+
     #page1 h1 {
       font-size: 60px;
     }
@@ -691,9 +718,6 @@ transition: all ease-out .3s;}
       width: 80%;
     }
     
-    #mypic {
-      display: none;
-    }
     
     .skills {
       padding: 0 50px;
@@ -782,11 +806,17 @@ transition: all ease-out .3s;}
 
 
     #nav a{
-        font-size: 10px;
-        width: 8px;
+        font-size: 11px;
+        padding-right: 14px;
     }
 
-    
+    #nav img{
+        display: none;
+    }
+
+    #navlinks{
+        display: block;   
+    }
  
     #page1{
         align-items: center;
@@ -913,6 +943,11 @@ transition: all ease-out .3s;}
   }
 
   @media only screen and (max-width: 370px){
+
+    #nav a{
+        font-size: 10px;
+        padding-right: 15px;
+    }
     
     #page1 h1 {
       font-size: 40px;
