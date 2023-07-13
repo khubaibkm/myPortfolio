@@ -628,8 +628,24 @@ transition: all ease-out .3s;}
 /* MEDIA QUERIES */
 
 
-@media only screen and (max-width: 1500px){
+@media only screen and (min-width: 1100px) and (max-width: 1460px){
+    #mypic{
+        left: 52rem;
+    }
+    
+    #nav a{
+        margin: 0 -8px;
+    }
 
+    #navlinks{
+        position: relative;
+        right: 3rem;
+    }
+}
+
+
+@media only screen and (max-width: 1500px){
+   
 
     #footer {
         /* height: 60vh; */
@@ -706,16 +722,17 @@ transition: all ease-out .3s;}
         display: none;
     }
 
+
     #page1 h1 {
-      font-size: 60px;
+      font-size: 75px;
     }
     
     #page1 h2 {
-      font-size: 24px;
+      font-size: 26px;
     }
     
     #page1 p {
-      width: 80%;
+      width: 70%;
     }
     
     
