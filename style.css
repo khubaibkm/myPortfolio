@@ -24,6 +24,10 @@ body::-webkit-scrollbar-thumb{
     border-radius: 30px;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 html{
     height: 100%;
     width: 100%;
@@ -531,6 +535,7 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     justify-content: flex-start;
     gap: 150px;
     padding: 0 100px;
+    overflow-x: hidden;
 }
 
 #footer>img{
@@ -624,6 +629,9 @@ transition: all ease-out .3s;}
       padding: 0 20px;
     }
     
+    #nav img{
+        height: 100px;
+    }
     #page1 h1 {
       font-size: 60px;
     }
@@ -711,6 +719,13 @@ transition: all ease-out .3s;}
   /* Media queries for smallest screens */
   @media only screen and (max-width: 480px) {
 
+
+    #nav a{
+        font-size: 10px;
+        width: 8px;
+    }
+
+    
  
     #page1{
         align-items: center;
@@ -798,28 +813,42 @@ transition: all ease-out .3s;}
       font-size: 20px;
       width: 90%;
     }
-    
+
     #footer {
-      padding: 0 20px;
-      gap: 80px;
-    }
+        height: 70vh;
+        padding: 10px;
+        gap: 15px;
+        padding:10px 0 0 30px;
+        flex-direction: column;
+        align-items: start;
+      }
+
     
-    #f1 h3 {
-      font-size: 32px;
-    }
+      #footer > img {
+        height: 50%;
+      }
     
-    #f2 h3,
-    #f3 h3 {
-      font-size: 20px;
-    }
+      #f1 h3 {
+        font-size: 42px;
+        height: auto;
+        margin-bottom: 20px;
+      }
     
-    #f4 h4 {
-      font-size: 14px;
-    }
+      #f2 h3,
+      #f3 h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
     
-    #f4 a {
-      font-size: 16px;
-    }
+      #f4 h4 {
+        font-size: 18px;
+        line-height: 20px;
+      }
+    
+      #f4 a {
+        font-size: 20px;
+        color:#30ab15
+      }
   }
 
   @media only screen and (max-width: 370px){
@@ -845,6 +874,40 @@ transition: all ease-out .3s;}
       right: 4.5rem;
       bottom: 12rem;
     }
+
+    #footer {
+        height: 70vh;
+        padding: 10px;
+        gap: 15px;
+        padding:10px 0 0 30px;
+      }
+
+    
+      #footer > img {
+        height: 50%;
+      }
+    
+      #f1 h3 {
+        font-size: 35px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+    
+      #f2 h3,
+      #f3 h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+    
+      #f4 h4 {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    
+      #f4 a {
+        font-size: 18px;
+        color:#30ab15
+      }
   }
 
 
