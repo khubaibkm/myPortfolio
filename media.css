@@ -1,0 +1,564 @@
+/* MEDIA QUERIES */
+
+
+@media only screen and (min-width: 1100px) and (max-width: 1460px){
+    #mypic{
+        left: 52rem;
+    }
+    
+    #nav a{
+        margin: 0 -8px;
+    }
+
+    #navlinks{
+        position: relative;
+        right: 3rem;
+    }
+}
+
+
+@media only screen and (max-width: 1500px){
+   
+
+    #footer {
+        /* height: 60vh; */
+        padding: 10px;
+        gap: 85px;
+        padding:20px 0 0 50px;
+        /* flex-direction: column;
+        align-items: start; */
+      }
+
+    
+      #footer > img {
+        height: 50%;
+      }
+    
+      #f1 h3 {
+        font-size: 52px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+    
+      #f2 h3,
+      #f3 h3 {
+        font-size: 25px;
+        margin-bottom: 15px;
+      }
+    
+      #f4 h4 {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    
+      #f4 a {
+        font-size: 22px;
+      }
+}
+
+@media only screen and (max-width: 1050px){
+    #footer {
+        gap: 15px;
+      }
+    
+    #mypic{
+        display: none;
+    }
+}
+
+
+
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    
+    #nav {
+      padding: 0 20px;
+    }
+    
+    #nav img{
+        height: 120px;
+    }
+
+    .resume{
+        display: none;
+    }
+
+    .contact{
+        display: none;
+    }
+
+    .achievements{
+        display: none;
+    }
+
+
+    #page1 h1 {
+      font-size: 75px;
+    }
+    
+    #page1 h2 {
+      font-size: 26px;
+    }
+    
+    #page1 p {
+      width: 70%;
+    }
+    
+    
+    .skills {
+      padding: 0 50px;
+    }
+    
+    #education {
+      padding: 0 50px;
+    }
+    
+    
+    .card {
+      height: 60%;
+      width: 45%;
+    }
+    
+    #green-div h4 {
+      font-size: 24px;
+      line-height: 40px;
+    }
+    
+    #green-div img {
+      width: 15%;
+    }
+    
+    #page4 h4 {
+      font-size: 45px;
+    }
+    
+    #page4 p {
+      font-size: 24px;
+      width: 80%;
+    }
+    
+    #footer {
+        height: 60vh;
+        padding: 10px;
+        gap: 15px;
+        padding:20px 0 0 50px;
+        flex-direction: column;
+        align-items: start;
+      }
+
+    
+      #footer > img {
+        height: 50%;
+      }
+    
+      #f1 h3 {
+        font-size: 52px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+    
+      #f2 h3,
+      #f3 h3 {
+        font-size: 25px;
+        margin-bottom: 15px;
+      }
+    
+      #f4 h4 {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    
+      #f4 a {
+        font-size: 22px;
+        color:#30ab15
+      }
+  }
+  
+
+
+  @media only screen and (max-height: 815px) and (max-width: 500px) {
+     #page1{
+        height: 120vh;
+     }
+
+     #about-me{
+        height: 100vh !important;
+     }
+
+     #education{
+        height: 50vh !important; 
+     }
+
+     #page2{
+        height: 350vh;
+     }
+
+     #page3{
+        height: 440vh !important;
+        
+    }
+    
+    #green-div{
+        margin-top: 2500px !important;
+    }
+
+    #about-me h3{
+        font-size: 40px !important;
+    }
+
+    #about-me{
+        margin-top: -35rem !important;
+    }
+
+    #page4{
+        height: 100vh !important;
+    }
+    
+    #page4 p {
+      width: 65% !important;
+    }
+
+    #page4 #colon1{
+        bottom: 13% !important;
+    }
+    
+    #page4 #colon2{
+        bottom: 8% !important;
+    }
+
+
+  }
+
+
+  @media only screen and (max-height: 700px) {
+    #page1{
+       height: 120vh;
+    }
+
+    #about-me{
+       height: 100vh !important;
+    }
+
+    #education{
+       height: 60vh !important; 
+    }
+
+    #page2{
+       height: 400vh;
+    }
+    #page3{
+        height: 480vh !important;
+        
+    }
+    
+    #green-div{
+        height: 52vh;
+        margin-top: 2200px !important;
+    }
+
+    #about-me{
+        margin-top: -30rem !important;
+    }
+
+    #page4 #colon1{
+        bottom: 13.5% !important;
+    }
+    
+
+    #page4 #colon2{
+        bottom: 7.7% !important;
+        right: 3% !important;
+    }
+
+    #footer{
+        height: 85vh !important;
+    }
+
+ }
+
+
+  /* Media queries for smallest screens */
+  @media only screen and (max-width: 480px) {
+
+
+    #nav a{
+        font-size: 11px;
+        padding-right: 14px;
+    }
+
+    #nav img{
+        display: none;
+    }
+
+    #navlinks{
+        display: block;   
+    }
+ 
+    #page1{
+        align-items: center;
+    }
+
+    #page1 h1::before{
+        top:-2.5px;
+        left: -2.5px;
+    }
+    
+    #page1 h1 {
+      font-size: 50px;
+      margin-bottom: 220px;
+      margin-left: -60px;
+    }
+    
+    #page1 h2 {
+      font-size: 20px;
+      position: relative;
+      right: 5.5rem;
+      bottom: 13rem;
+      
+    }
+    
+    #page1 p {
+      width: 70%;
+      position: relative;
+      right: 4.5rem;
+      bottom: 13rem;
+    }
+
+
+    #scroller h4{
+        font-size: 70px;
+        font-weight: 900;
+        margin-right: 10px;
+        -webkit-text-stroke: 1px white;
+        margin-bottom: 550px;
+        position: relative;
+        bottom: -2rem;
+    }
+
+
+    #about-me{
+        height: 70vh;
+        padding: 0 1px;
+        margin-top: -30rem;
+    }
+
+    #aboutin{
+        width: 70% ;
+       }
+
+    #aboutin h3{
+        font-size: 45px;
+       }
+
+    #aboutin p{
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    .skills {
+      padding: 0 20px;
+      top: 0rem
+    }
+
+    .skills h2{
+      font-size: 45px;
+    }
+    
+    #education {
+      padding: 0 20px;
+      height: 45vh;
+    }
+
+    #education h2{
+      font-size: 45px;
+    }
+    
+
+    #college{
+        width: 70%;
+        margin-top: -20px;
+    }
+
+    #school{
+        width: 70%;
+    }
+    
+    
+    #college p,
+    #school p {
+      font-size: 16px;
+    }
+
+    #page3{
+        height: 420vh;
+    }
+
+    #page3 h2{
+        font-size: 45px;
+    }
+  
+
+    .card {
+      height: 50%;
+      width: 90%;
+    }
+    
+    #green-div{
+        margin-top: 2600px;
+    }
+
+    #green-div h4 {
+      font-size: 17px;
+      line-height: 30px;
+    }
+    
+    #green-div img {
+      width: 15%;
+    }
+
+    #page4{
+        height: 90vh;
+    }
+    
+    #page4 h4 {
+      font-size: 40px;
+    }
+    
+    #page4 p {
+      margin-top: 20px;
+      font-size: 20px;
+      width: 70%;
+    }
+
+    #page4 #colon1{
+        width: 60px;
+        left: 5%;
+        bottom: 13.5%;
+    }
+    
+    #page4 #colon2{
+        width: 60px;
+        bottom: 8.6%;
+        right: 5%;
+    }
+
+    #footer {
+        height: 70vh;
+        padding: 10px;
+        gap: 15px;
+        padding:20px 0 0 50px;
+        flex-direction: column;
+        align-items: start;
+      }
+
+    
+      #footer > img {
+        height: 50%;
+      }
+    
+      #f1 h3 {
+        font-size: 42px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+    
+      #f2 h3,
+      #f3 h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+    
+      #f4 h4 {
+        font-size: 18px;
+        line-height: 20px;
+      }
+    
+      #f4 a {
+        font-size: 20px;
+        color:#30ab15
+      }
+  }
+
+  @media only screen and (max-width: 370px){
+
+    #nav a{
+        font-size: 10px;
+        padding-right: 15px;
+    }
+    
+    #page1 h1 {
+      font-size: 40px;
+      margin-bottom: 200px;
+      margin-left: -60px;
+    }
+    
+    #page1 h2 {
+      font-size: 18px;
+      position: relative;
+      right: 6rem;
+      bottom: 12rem;
+      
+    }
+    
+    #page1 p {
+      width: 70%;
+      font-size: 18px;
+      position: relative;
+      right: 4.5rem;
+      bottom: 12rem;
+    }
+
+
+
+
+    #footer {
+        height: 70vh;
+        padding: 10px;
+        gap: 15px;
+        padding:10px 0 0 30px;
+      }
+
+    
+      #footer > img {
+        height: 50%;
+      }
+    
+      #f1 h3 {
+        font-size: 35px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+    
+      #f2 h3,
+      #f3 h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+    
+      #f4 h4 {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    
+      #f4 a {
+        font-size: 18px;
+        color:#30ab15
+      }
+  }
+
+
+
+
+  /* Media queries for large screens */
+  @media only screen and (min-width: 1950px){
+    #mypic{
+        left: 80rem;
+    }
+  }
+  
+
+  
