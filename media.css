@@ -234,7 +234,7 @@
   }
 
 
-  @media only screen and (max-height: 700px) {
+  @media only screen and (max-height: 700px) and (max-width: 500px) {
     #page1{
        height: 120vh;
     }
@@ -271,7 +271,7 @@
 
     #page4 #colon2{
         bottom: 7.7% !important;
-        right: 3% !important;
+        right: 18% !important;
     }
 
     #footer{
@@ -436,14 +436,14 @@
 
     #page4 #colon1{
         width: 60px;
-        left: 5%;
+        left: 18%;
         bottom: 13.5%;
     }
     
     #page4 #colon2{
         width: 60px;
         bottom: 8.6%;
-        right: 5%;
+        right: 18%;
     }
 
     #footer {
