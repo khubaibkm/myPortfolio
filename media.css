@@ -37,6 +37,10 @@
         align-items: start; */
       }
 
+      .card{
+        height: 55%;
+        width: 40%;
+      }
     
       #footer > img {
         height: 50%;
@@ -130,7 +134,7 @@
     
     
     .card {
-      height: 60%;
+      height: 55%;
       width: 45%;
     }
     
