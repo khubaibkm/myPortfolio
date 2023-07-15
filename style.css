@@ -167,6 +167,7 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    scroll-behavior: smooth;
     transition: all ease 0.5s;
 }
 
