@@ -138,6 +138,9 @@
       width: 45%;
     }
     
+    .overlay h4{
+        font-size: 25px !important;
+    }
 
     #green-div{
         margin-top: 1500px;
@@ -218,7 +221,7 @@
      }
 
      #about-me{
-        height: 100vh !important;
+        height: 80vh !important;
      }
 
      #education{
@@ -244,6 +247,11 @@
 
     #about-me{
         margin-top: -35rem !important;
+    }
+
+
+    .overlay p{
+        font-size: 16px;
     }
 
     #page4{
@@ -272,7 +280,7 @@
     }
 
     #about-me{
-       height: 100vh !important;
+       height: 80vh !important;
     }
 
     #education{
@@ -296,11 +304,15 @@
         margin-top: -30rem !important;
     }
 
+    .overlay p{
+        font-size: 15px !important;
+    }
+
+
     #page4 #colon1{
         bottom: 13.5% !important;
     }
     
-
     #page4 #colon2{
         bottom: 7.7% !important;
         right: 18% !important;
@@ -382,13 +394,12 @@
 
 
     #about-me{
-        height: 70vh;
+        height: 60vh;
         padding: 0 1px;
         margin-top: -30rem;
     }
-
     #aboutin{
-        width: 70% ;
+        width: 85% ;
        }
 
     #aboutin h3{
@@ -455,6 +466,17 @@
     .card {
       height: 50%;
       width: 90%;
+    }
+
+    .overlay h4{
+        font-size: 30px;
+        position: relative;
+        bottom: 3rem;
+    }
+
+    .overlay p{
+        position: relative;
+        bottom: 3rem;
     }
     
     #green-div{
