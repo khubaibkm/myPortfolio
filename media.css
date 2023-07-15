@@ -137,6 +137,10 @@
       height: 55%;
       width: 45%;
     }
+
+    .card:hover{
+        transform: none !important;
+    }
     
     .overlay h4{
         font-size: 25px !important;
@@ -467,6 +471,7 @@
       height: 50%;
       width: 90%;
     }
+
 
     .overlay h4{
         font-size: 30px;
