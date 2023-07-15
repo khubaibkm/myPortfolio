@@ -223,7 +223,7 @@
     }
 
     #page4 #colon1{
-        bottom: 13% !important;
+        bottom: 13.3% !important;
     }
     
     #page4 #colon2{
@@ -236,7 +236,7 @@
 
   @media only screen and (max-height: 700px) and (max-width: 500px) {
     #page1{
-       height: 120vh;
+       height: 120vh !important;
     }
 
     #about-me{
@@ -298,7 +298,17 @@
         display: block;   
     }
  
+    #cursor{
+       height: 12px;
+       width: 12px;
+    }
+
+    #cursor-blur{
+        display: none;
+    }
+
     #page1{
+        height: 95vh;
         align-items: center;
     }
 
@@ -358,6 +368,15 @@
         font-size: 16px;
         line-height: 40px;
     }
+
+    .skill-name {
+        font-size: 18px;
+      }
+      
+      .skill-bar {
+        height: 22px;
+        margin-bottom: 50px;
+      }
 
     .skills {
       padding: 0 20px;
