@@ -32,6 +32,7 @@ html{
     height: 100%;
     width: 100%;
     scroll-behavior: smooth;
+    background-color: black;
 }
 
 /* cusor */
@@ -78,6 +79,7 @@ html{
 
 
 #nav a{
+    color: white;
     text-transform: uppercase;
     font-weight: 500;
     text-decoration: none;
@@ -92,7 +94,7 @@ html{
 }
 
 .resume{
-    color: #c6ff2a;
+    color: #c6ff2a !important;
     font-weight: 800 !important;
 }
 

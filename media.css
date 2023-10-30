@@ -68,6 +68,15 @@
       }
 }
 
+@media only screen and (max-width: 1260px){
+  #mypic{
+    display: none;
+}
+.resume{
+  display: none;
+}
+}
+
 @media only screen and (max-width: 1050px){
     #footer {
         gap: 15px;
@@ -564,7 +573,7 @@
 
     #nav a{
         font-size: 10px;
-        padding-right: 15px;
+        padding-right: 10px;
     }
     
     #page1 h1 {
@@ -588,9 +597,6 @@
       right: 4.5rem;
       bottom: 12rem;
     }
-
-
-
 
     #footer {
         height: 70vh;
@@ -625,15 +631,64 @@
         font-size: 18px;
         color:#30ab15
       }
+      .overlay h4{
+        margin-top: -1.5rem;
+      }
+
+      #page3{
+        height: 560vh !important;
+      }
+      #page4 h4{
+        font-size: 35px;
+        position: relative;
+        top: -2em;
+      }
+      #green-div h4{
+        font-size: 14px;
+      }
+      #page4 p{
+        font-size: 18px;
+      }
+      #page4{
+        position: relative;
+        top: -8rem;
+      }
+
+      #colon1{
+        display: none;
+      }
+      #colon2{
+        display: none;
+      }
   }
 
 
+  @media only screen and (min-width: 1900px) and (max-height: 800px){
+    .skills{
+      height: 150vh;
+      margin-top: 400px;
+    }
+
+    #page3{
+      height: 350vh;
+      position: relative;
+      top: 50rem;
+    }
+    #page4{
+      height: 160vh;
+      margin-top: 45rem;
+    }
+    .overlay h4{
+      margin-top: -3rem;
+    }
+  }
 
 
   /* Media queries for large screens */
-  @media only screen and (min-width: 1950px){
+  @media only screen and (min-width: 1900px){
     #mypic{
         left: 80rem;
+        margin-top: 5rem;
     }
 
     #green-div{
@@ -642,4 +697,11 @@
   }
   
 
-  
+  @media only screen and (min-width: 1900px) and (min-height: 860px){
+    #education{
+      height: 100vh;
+    }
+    .skills{
+      margin-top: 25rem;
+    }
+  }
