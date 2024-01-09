@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,27 +8,27 @@
     color: white;
 }
 
-*::selection{
+*::selection {
     color: #addc2f;
     background-color: white;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: block;
     width: 8px;
     background-color: #addc2f;
 }
 
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 30px;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
-html{
+html {
     height: 100%;
     width: 100%;
     scroll-behavior: smooth;
@@ -36,7 +36,7 @@ html{
 }
 
 /* cusor */
-#cursor{
+#cursor {
     height: 20px;
     width: 20px;
     background-color: #addc2f;
@@ -45,10 +45,10 @@ html{
     z-index: 99;
 }
 
-#cursor-blur{
+#cursor-blur {
     height: 400px;
     width: 400px;
-    background-color:#aedc2f3e;
+    background-color: #aedc2f3e;
     border-radius: 100%;
     position: fixed;
     filter: blur(60px);
@@ -56,29 +56,29 @@ html{
 }
 
 
-#nav{
+#nav {
     height: 120px;
     width: 100%;
     padding: 0 120px;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: flex-start;
     position: fixed;
     gap: 50px;
     z-index: 99;
 }
 
-#navlinks{
+#navlinks {
     display: flex;
-    gap:50px
+    gap: 50px
 }
 
-#nav img{
+#nav img {
     height: 200px;
 }
 
 
-#nav a{
+#nav a {
     color: white;
     text-transform: uppercase;
     font-weight: 500;
@@ -87,31 +87,31 @@ html{
 
 }
 
-#nav a:hover{
+#nav a:hover {
     color: #addc2f;
     scale: 1.2;
     transition: all ease-out 0.3s;
 }
 
-.resume{
+.resume {
     color: #c6ff2a !important;
     font-weight: 800 !important;
 }
 
 
 /* main div */
-#main{
+#main {
     position: relative;
     /* background-color: rgba(0, 0, 0, 0.37); */
 }
 
 
 /* page 1 div */
-#page1{
+#page1 {
     height: 100vh;
     width: 100%;
-    background: rgb(218,217,226);
-background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
+    background: rgb(218, 217, 226);
+    background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -121,7 +121,7 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     z-index: 10;
 }
 
-#page1 h1{
+#page1 h1 {
     font-size: 100px;
     font-weight: 900;
     text-transform: uppercase;
@@ -133,32 +133,33 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     margin-left: 155px;
 }
 
-#page1 h1::before{
-    content:"Hey, I am khubaib Ahmad.";
+#page1 h1::before {
+    content: "Hey, I am khubaib Ahmad.";
     text-transform: uppercase;
     position: absolute;
     color: black;
-    top:-4px;
+    top: -4px;
     left: -4px;
     -webkit-text-stroke: 2px #addc2f;
     z-index: -1;
 
 }
 
-#page1 h2{
+#page1 h2 {
     font-size: 30px;
     font-weight: 800;
     margin: 10px 0 20px 0;
     margin-left: 155px;
 }
-#page1 p{
+
+#page1 p {
     font-size: 20px;
     font-weight: 300;
     width: 40%;
     margin-left: 155px;
 }
 
-#page1 #arrow{
+#page1 #arrow {
     height: 180px;
     width: 180px;
     border: 2px solid #addc2f;
@@ -173,33 +174,33 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     transition: all ease 0.5s;
 }
 
-#page1 #arrow:hover{
+#page1 #arrow:hover {
     scale: 0.8;
     background-color: #addc2f;
     cursor: pointer;
 }
 
-#page1 #arrow i{
+#page1 #arrow i {
     font-size: 50px;
-    
+
 }
 
-#mypic{
+#mypic {
     position: absolute;
-    left: 62rem;
-    top: 11rem;
+    left: 55rem;
+    top: 8rem;
 }
 
 
 
 /* page 2 div */
-#page2{
+#page2 {
     height: 300vh;
     width: 100%;
     z-index: 10;
 }
 
-#scroller{
+#scroller {
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
@@ -208,11 +209,11 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     top: 3rem;
 }
 
-#scroller::-webkit-scrollbar{
+#scroller::-webkit-scrollbar {
     display: none;
 }
 
-#scroller1{
+#scroller1 {
     display: inline-block;
     white-space: nowrap;
     animation: scroll;
@@ -221,7 +222,7 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     animation-iteration-count: infinite;
 }
 
-#scroller h4{
+#scroller h4 {
     display: inline-block;
     font-size: 140px;
     font-weight: 900;
@@ -230,27 +231,28 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     transition: all linear 0.4s;
     color: black;
     -webkit-text-stroke: 2px white;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#scroller1 h4:hover{
+#scroller1 h4:hover {
     color: #addc2f;
     -webkit-text-stroke: 2px #addc2f;
 }
 
 
 @keyframes scroll {
-    from{
+    from {
         transform: translateX(0);
     }
-    to{
+
+    to {
         transform: translateX(-100%);
     }
 }
 
 
 /* about me */
-#about-me{
+#about-me {
     height: 40vh;
     width: 100%;
     display: flex;
@@ -260,18 +262,18 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     padding-top: 5rem;
 }
 
-#aboutin{
+#aboutin {
     width: 50%;
     text-align: center;
 }
 
-#aboutin h3{
+#aboutin h3 {
     font-size: 55px;
     font-weight: 800;
     margin: 200px 0 40px 0;
 }
 
-#aboutin p{
+#aboutin p {
     font-size: 22px;
     line-height: 35px;
 }
@@ -283,45 +285,45 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     border: none;
     position: relative;
     top: 3rem;
-    
-  }
 
-.skills h2{
+}
+
+.skills h2 {
     font-size: 55px;
     text-align: center;
     margin-bottom: 60px;
     margin-top: 200px;
 }
-  
-  .skill {
+
+.skill {
     margin-bottom: 10px;
-  }
-  
-  .skill-name {
+}
+
+.skill-name {
     font-weight: 500;
     margin-bottom: 10px;
     font-size: 22px;
-  }
-  
-  .skill-bar {
+}
+
+.skill-bar {
     height: 25px;
     background-color: #f2f2f2;
     border-radius: 30px;
     margin-bottom: 40px;
     width: 0;
     transition: width 5s ease;
-  }
-  
-  .skill-level {
+}
+
+.skill-level {
     height: 100%;
     background: black;
     background: linear-gradient(90deg, #addc2f 0%, #5eae22 120%);
     border-radius: 50px;
-  }
-  
+}
+
 
 /* education */
-#education{
+#education {
     height: 40vh;
     width: 100%;
     display: flex;
@@ -332,57 +334,57 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     padding-bottom: 5rem;
 }
 
-#education h2{
+#education h2 {
     font-size: 55px;
     font-weight: 800;
     margin: 600px 0 100px 0;
 }
 
-#college{
+#college {
     width: 50%;
     text-align: center;
 }
 
-#college h3{
+#college h3 {
     font-size: 35px;
     font-weight: 800;
     margin: 0px 0 40px 0;
     text-align: left;
 }
 
-#college p{
+#college p {
     font-size: 22px;
     line-height: 35px;
     text-align: left;
 }
 
-#school{
+#school {
     width: 50%;
     text-align: center;
 }
 
-#school h3{
+#school h3 {
     font-size: 35px;
     font-weight: 800;
     margin: 50px 0 40px 0;
     text-align: left;
 }
 
-#school p{
+#school p {
     font-size: 22px;
     line-height: 35px;
     text-align: left;
 }
 
 /* page 3 div */
-#page3{
+#page3 {
     height: 280vh;
     width: 100%;
     z-index: 10;
     background-color: black;
 }
 
-#page3 h2{
+#page3 h2 {
     font-size: 55px;
     font-weight: 800;
     text-align: center;
@@ -390,7 +392,7 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     top: 8rem;
 }
 
-#cards-container{
+#cards-container {
     height: 60vh;
     display: flex;
     flex-wrap: wrap;
@@ -403,7 +405,7 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
 }
 
 
-.card{
+.card {
     height: 80%;
     width: 28%;
     margin-top: 60px;
@@ -413,51 +415,56 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     transition: all ease 0.6s;
 }
 
-#card1{
+#card1 {
     background-image: url(images/projects/proj1.png);
     background-position: center;
     background-size: cover;
 }
 
-#card2{
+#card2 {
     background-image: url(images/projects/proj2.png);
     background-position: center;
     background-size: cover;
 }
 
-#card3{
+#card3 {
     background-image: url(images/projects/proj3.png);
-    background-position:left;
-    background-size: cover;
-}
-#card4{
-    background-image: url(images/projects/proj4.png);
-    background-position:left;
-    background-size: cover;
-}
-#card5{
-    background-image: url(images/projects/proj5.png);
-    background-position:left;
-    background-size: cover;
-}
-#card6{
-    background-image: url(images/projects/proj6.png);
-    background-position:left;
-    background-size: cover;
-}
-#card7{
-    background-image: url(images/projects/proj7.png);
-    background-position:left;
-    background-size: cover;
-}
-#card8{
-    background-image: url(images/projects/proj8.png);
-    background-position:left;
+    background-position: left;
     background-size: cover;
 }
 
-  
-.overlay{
+#card4 {
+    background-image: url(images/projects/proj4.png);
+    background-position: left;
+    background-size: cover;
+}
+
+#card5 {
+    background-image: url(images/projects/proj5.png);
+    background-position: left;
+    background-size: cover;
+}
+
+#card6 {
+    background-image: url(images/projects/proj6.png);
+    background-position: left;
+    background-size: cover;
+}
+
+#card7 {
+    background-image: url(images/projects/proj7.png);
+    background-position: left;
+    background-size: cover;
+}
+
+#card8 {
+    background-image: url(images/projects/proj8.png);
+    background-position: left;
+    background-size: cover;
+}
+
+
+.overlay {
     height: 100%;
     width: 100%;
     background-color: #addc2f;
@@ -468,7 +475,7 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     transition: all ease 0.6s;
 }
 
-.overlay h4{
+.overlay h4 {
     font-size: 38px;
     text-transform: uppercase;
     white-space: wrap;
@@ -476,42 +483,43 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     font-weight: 800;
 }
 
-.overlay a{
+.overlay a {
     color: black;
     text-decoration: none;
     transition: all ease-out 0.5s;
 }
-.overlay a:hover{
+
+.overlay a:hover {
     color: white;
     transition: all ease-out 0.5s;
 }
 
-.overlay p{
+.overlay p {
     color: black;
     font-size: 18px;
 
 }
 
-.card:hover .overlay{
-   opacity: 1;
-   
+.card:hover .overlay {
+    opacity: 1;
+
 }
 
-.card:hover{
-    transform: rotate3d(-1,1,0,20deg) !important;
-    cursor:default;
+.card:hover {
+    transform: rotate3d(-1, 1, 0, 20deg) !important;
+    cursor: default;
 }
 
-#green-div{
+#green-div {
     height: 45vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(to right top, #c6ff2a, #30ab15 );
+    background: linear-gradient(to right top, #c6ff2a, #30ab15);
     justify-content: space-between;
     margin-top: 1050px;
 }
 
-#green-div h4{
+#green-div h4 {
     width: 45%;
     color: black;
     line-height: 50px;
@@ -521,7 +529,7 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     text-transform: uppercase;
 }
 
-#green-div img{
+#green-div img {
     height: 100%;
     object-fit: cover;
     width: 11%;
@@ -529,7 +537,7 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
 
 
 /* page 4 div */
-#page4{
+#page4 {
     height: 115vh;
     width: 100%;
     z-index: 10;
@@ -540,7 +548,7 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     flex-direction: column;
 }
 
-#page4 h4{
+#page4 h4 {
     text-transform: uppercase;
     font-size: 55px;
     font-weight: 800;
@@ -549,32 +557,33 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     top: -8rem;
 }
 
-#page4>p{
+#page4>p {
     font-size: 35px;
     font-weight: 800;
     width: 60%;
-    text-align: center;}
+    text-align: center;
+}
 
 
-#page4 img{
+#page4 img {
     position: absolute;
     height: 60px;
 }
 
-#page4 #colon1{
+#page4 #colon1 {
     left: 12%;
     bottom: 14%;
 }
 
-#page4 #colon2{
+#page4 #colon2 {
     bottom: 8%;
     right: 14%;
 }
 
-#footer{
+#footer {
     height: 40vh;
     width: 100%;
-    background: linear-gradient(to right top, #c6ff2a, #30ab15 );
+    background: linear-gradient(to right top, #c6ff2a, #30ab15);
     position: relative;
     display: flex;
     align-items: center;
@@ -584,31 +593,34 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     overflow-x: hidden;
 }
 
-#footer>img{
+#footer>img {
     position: absolute;
     left: 0;
     height: 90%;
 }
 
-#f1 h3{
+#f1 h3 {
     height: 200px;
     font-size: 48px;
     font-weight: 800;
 }
 
-#f1,#f2,#f3,#f4{
+#f1,
+#f2,
+#f3,
+#f4 {
     width: fit-content;
     position: relative;
     z-index: 100;
 }
 
-#footer i{
+#footer i {
     color: black;
     font-weight: 500;
 }
 
 
-#f2 h3{
+#f2 h3 {
     font-size: 30px;
     white-space: nowrap;
     text-transform: uppercase;
@@ -617,7 +629,7 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     margin-bottom: 25px;
 }
 
-#f3 h3{
+#f3 h3 {
     font-size: 30px;
     white-space: nowrap;
     text-transform: uppercase;
@@ -626,12 +638,13 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     margin-bottom: 25px;
 }
 
-#f2 a,#f3 a{
+#f2 a,
+#f3 a {
     text-decoration: none;
     color: black;
 }
 
-#f4 h4{
+#f4 h4 {
     font-size: 18px;
     white-space: nowrap;
     text-transform: uppercase;
@@ -641,24 +654,24 @@ background: linear-gradient(15deg, rgb(41, 41, 41) 0%, rgb(137, 137, 137) 100%);
     margin-bottom: 8px;
 }
 
-#f4 a{
+#f4 a {
     text-decoration: none;
     font-weight: 800;
     color: #d2ff56;
     font-size: 22px;
 }
 
-#f4 a:hover{
+#f4 a:hover {
     color: white;
     cursor: pointer;
-    transition: all ease-out .3s;}
+    transition: all ease-out .3s;
+}
 
-#f2 a:hover,#f3 a:hover{
+#f2 a:hover,
+#f3 a:hover {
     cursor: pointer;
     color: white;
-transition: all ease-out .3s;}
+    transition: all ease-out .3s;
+}
 
 /* -------------------------------------------------------------------------------- */
-
-
-
