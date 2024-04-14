@@ -187,9 +187,23 @@ html {
 
 #mypic {
     position: absolute;
-    left: 55rem;
-    top: 8rem;
+    top: 6rem;
+    right: 2rem;
+    left: 65rem !important;
+    /* width: 520px; */
+    /* Adjust width as needed */
+    height: 88%;
+    /* Full height of the viewport */
+    background-image: url('images/mypic2.png');
+    /* Path to your image */
+    background-size: cover;
+    /* Cover the entire container */
+    background-repeat: no-repeat;
+    /* Prevent repeating the image */
+    z-index: -1;
+    /* Place the image behind other content */
 }
+
 
 
 
