@@ -4,7 +4,7 @@
 @media only screen and (min-width: 1100px) and (max-width: 1460px) {
   #mypic {
     left: 44rem !important;
-    height: 89%;
+    height: 89% !important;
   }
 
   #nav a {
@@ -643,6 +643,11 @@
     height: 560vh !important;
   }
 
+  #page3 h2 {
+    padding-top: 4rem;
+    font-size: 32px;
+  }
+
   #page4 h4 {
     font-size: 35px;
     position: relative;
@@ -700,7 +705,12 @@
   #mypic {
     /* width: 620px !important; */
     left: 80rem;
-    margin-top: 1rem;
+    margin-top: -6rem;
+    height: 100%;
+  }
+
+  #aboutin p {
+    font-size: 25px;
   }
 
   #green-div {
@@ -731,5 +741,22 @@
   #mypic {
     left: 58rem !important;
     height: 87%;
+  }
+}
+
+
+@media only screen and (min-height: 800px) and (max-height: 860px) {
+  #mypic {
+    top: 5.7rem !important;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1499px) {
+
+  #card5,
+  #card6,
+  #card7,
+  #card8 {
+    background-position: top;
   }
 }

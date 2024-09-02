@@ -62,11 +62,15 @@ document.querySelectorAll("#arr a").forEach((anchor) => {
 });
 
 // Set the width of the skill bars
-const skillBars = document.querySelectorAll(".skill-bar");
-skillBars.forEach((skillBar) => {
-  const skillLevel = skillBar.querySelector(".skill-level");
-  const width = skillLevel.getAttribute("data-width");
-  skillBar.style.width = width;
+document.addEventListener("DOMContentLoaded", function() {
+  const skillBars = document.querySelectorAll(".skill-bar");
+  skillBars.forEach((skillBar) => {
+    const skillLevel = skillBar.querySelector(".skill-level");
+    const width = skillLevel.getAttribute("data-width");
+    setTimeout(() => {
+      skillLevel.style.width = width;
+    }, 100); // Add a slight delay to ensure the transition is visible
+  });
 });
 
 // cursor selection animation using scroll trigger (gsap)
@@ -211,4 +215,34 @@ gsap.from("#colon2", {
     end: "top 55%",
     scrub: 4,
   },
+});
+
+
+// preventing zooming in/out (becuase of responsive reasons)
+
+// Prevent zooming using the wheel (mouse)
+document.addEventListener('wheel', function(event) {
+  if (event.ctrlKey) {
+      event.preventDefault();
+  }
+}, { passive: false });
+
+// Prevent zooming using keydown (Ctrl + +/- and Ctrl + ScrollLock)
+document.addEventListener('keydown', function(event) {
+  if (event.ctrlKey && (event.key === '+' || event.key === '-' || event.key === '=' || event.key === '0')) {
+      event.preventDefault();
+  }
+});
+
+// Prevent pinch-to-zoom on touch devices
+document.addEventListener('gesturestart', function(event) {
+  event.preventDefault();
+});
+
+document.addEventListener('gesturechange', function(event) {
+  event.preventDefault();
+});
+
+document.addEventListener('gestureend', function(event) {
+  event.preventDefault();
 });
